@@ -1,0 +1,388 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+.spuna {
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .2;
+}
+
+.spuna span {
+    font-weight: bolder;
+    font-style: italic;
+}
+
+#Rule {
+    margin-top: 0;
+    margin-right: 25px;
+    font-size: 12px;
+}
+
+#HebrewText {
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+}
+
+#hebrewWord {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+.card {
+	background-color: #fff;
+	border-radius: 4px;
+	padding: 0 34px;
+	color: #444;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.Container {
+    /* Light grey background to help focus on the cards */
+    background-color: rgb(238, 238, 238);
+    /* Extra spacing so the grid looks uniform on the page */
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .Grid__Container {
+    /* Initialize the grid */
+    display: grid;
+    /* Single column on small screens */
+    margin-top: 50px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  
+  .Stat__Card {
+    padding: 1rem;
+    background-color: white;
+    /* Subtle box-shadow that defines the shape of the card */
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.15);
+    border-radius: 0.5rem;
+  }
+  
+  .Stat__Card p {
+    margin: 0 35px 10px 0;
+    font-size: 12px;
+  }
+  @media (min-width: 768px) {
+    .Grid__Container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .Stat__Title {
+    color: #6c757d;
+  }
+  
+  .Stat__Content {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .gelt {
+    color: #3D8DAE;
+  }
+
+  .pot {
+    color: #DBAD4A;
+  }
+
+  .facts {
+    position: absolute;
+    right: 250px;
+    margin-top: 50px;
+  }
+
+  .translate {
+    word-spacing: 1.3rem;
+  }
+
+  .title-word {
+    animation: color-animation 4s linear infinite;
+  }
+  
+  .title-word-1 {
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+  }
+  
+  .title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+  }
+  
+  .title-word-3 {
+    --color-1: #ACCFCB;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+  }
+  
+  .title-word-4 {
+    --color-1: #3D8DAE;
+    --color-2: #DF8453;
+    --color-3: #E4A9A8;
+  }
+  
+  @keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+  
+  /* Here are just some visual styles. 🖌 */
+  
+  .container {
+    display: grid;
+    place-items: center;  
+    text-align: center;
+  }
+  
+  .title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 3.5vw;
+    text-transform: uppercase;
+    margin-left: 20px;
+    width: 70%;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  @keyframes tonext {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: 100%;
+    }
+    98% {
+      left: 100%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+  @keyframes tostart {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: -300%;
+    }
+    98% {
+      left: -300%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+  @keyframes snap {
+    96% {
+      scroll-snap-align: center;
+    }
+    97% {
+      scroll-snap-align: none;
+    }
+    99% {
+      scroll-snap-align: none;
+    }
+    100% {
+      scroll-snap-align: center;
+    }
+  }
+  
+  
+  * {
+    box-sizing: border-box;
+    scrollbar-color: transparent transparent; /* thumb and track color */
+    scrollbar-width: 0px;
+  }
+  
+  *::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+  }
+  
+  * {
+    -ms-overflow-style: none;
+  }
+  
+  ol, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .carousel {
+    position: relative;
+    padding-top: 35%;
+    filter: drop-shadow(0 0 10px #0003);
+    perspective: 100px;
+  }
+  
+  .carousel__viewport {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    overflow-x: scroll;
+    counter-reset: item;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .carousel__slide {
+    position: relative;
+    flex: 0 0 100%;
+    width: 100%;
+    background-color: rgb(238, 238, 238);
+  }
+  
+  .carousel__slide:nth-child(even) {
+    background-color: rgb(238, 238, 238);
+  }
+  
+  .carousel__slide:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-40%,70px);
+    color: #fff;
+    font-size: 2em;
+  }
+  
+  .carousel__snapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center;
+  }
+
+  .carousel__snapper > div {
+    margin: 0 25px;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .column2 {
+    flex: 60%;
+  }
+  .column {
+    flex: 40%;
+  }
+  
+  @media (hover: hover) {
+    .carousel__snapper {
+      animation-name: tonext, snap;
+      animation-timing-function: ease;
+      animation-duration: 7s;
+      animation-iteration-count: infinite;
+    }
+  
+    .carousel__slide:last-child .carousel__snapper {
+      animation-name: tostart, snap;
+    }
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .carousel__snapper {
+      animation-name: none;
+    }
+  }
+  
+  .carousel:hover .carousel__snapper,
+  .carousel:focus-within .carousel__snapper {
+    animation-name: none;
+  }
+  
+  .carousel__navigation {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+  }
+  
+  .carousel__navigation-list,
+  .carousel__navigation-item {
+    display: inline-block;
+  }
+  
+  .carousel__navigation-button {
+    display: inline-block;
+    width: 1.5rem;
+    background-color: #333;
+    background-clip: content-box;
+    border: 0.25rem solid transparent;
+    border-radius: 50%;
+    font-size: 0;
+    transition: transform 0.1s;
+  }
+  
+  .carousel::before,
+  .carousel::after,
+  .carousel__prev,
+  .carousel__next {
+    position: absolute;
+    top: 0;
+    margin-top: 37.5%;
+    width: 4rem;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    font-size: 0;
+    outline: 0;
+  }
+  
+  .carousel::before,
+  .carousel__prev {
+    left: -1rem;
+  }
+  
+  .carousel::after,
+  .carousel__next {
+    right: -1rem;
+  }
+  
+  .carousel::before,
+  .carousel::after {
+    content: '';
+    z-index: 1;
+    background-color: #333;
+    background-size: 1.5rem 1.5rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    pointer-events: none;
+  }
+  
