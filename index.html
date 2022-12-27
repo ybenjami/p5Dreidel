@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang=""> 
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>p5 Dreidel</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      background-color: #3d5c71;
+    }
+  </style>
+  <script src="../p5.min.js"></script>
+  <!-- <script src="../addons/p5.sound.js"></script> -->
+  <script src="sketch.js"></script>
+</head>
+
+<body>
+  <main class="game">
+    <div class="Container">
+      <h2 class="title">
+        <span class="title-word title-word-1">Dreidel, Dreidel, Dreidel </span>
+        <span class="title-word title-word-2">I</span>
+        <span class="title-word title-word-3">Made</span>
+        <span class="title-word title-word-4">you </span>
+        <span class="title-word title-word-2">out</span>
+        <span class="title-word title-word-3">of</span>
+        <span class="title-word title-word-4">P5.js </span>
+      </h2>
+      
+    </div>
+
+    <div class="facts Container">
+      <div class="Stat__Content"> נס גדול היה שם </div>
+      <div class="Stat__Title translate">Ness Gadol Hya Sham</div>
+      <h3>A Great Miracle Happend There</h3>
+    
+      <div class="Grid__Container">
+        <div class="Stat__Card">
+          <div class="Stat__Title">My Gelt</div>
+          <div class="Stat__Content gelt" id="scoreValue"></div>
+        </div>
+        <div class="Stat__Card">
+          <div class="Stat__Title">The Pot</div>
+          <div class="Stat__Content pot" id="potValue"></div>
+        </div>
+          <h3 id="result"></h3>
+      </div>
+  </div>
+</main>
+     <div class="card">
+       <div class="Grid__Container">
+        <div class="Stat__Card">
+          <p class="spuna"> You spun a <span id = "scoreText"></span></p>
+          <h2 id ="HebrewText"></h2>
+          <h3 id = "hebrewWord"></h3>
+          <h3 id = "scoreText"></h3>
+          <p id="Rule"></p>
+        </div>
+         <div class="Stat__Card">
+          <section class="carousel" aria-label="Gallery">
+            <ol class="carousel__viewport">
+              <li id="carousel__slide1"
+                  tabindex="0"
+                  class="carousel__slide">
+                <div class="carousel__snapper">
+                  <div class="row">
+                    <div class="column">
+                      <img src="assets/light.jpg" style="margin-top: 35px;" width="200" />
+                    </div>
+                    <div class="column2">
+                      <h3>What is Chanukah?</h3>
+                      <p>Chanukah is the Jewish eight-day, wintertime “festival of lights,” celebrated with a nightly menorah lighting, special prayers and fried foods.</p>
+                      <p>The Hebrew word Chanukah means “dedication,” and is thus named because it celebrates the rededication of the Holy Temple.</p>
+                    </div>
+                  </div>
+                 
+                </div>
+              </li>
+              <li id="carousel__slide2"
+                  tabindex="0"
+                  class="carousel__slide">
+                <div class="carousel__snapper">
+                  <div class="row">
+                    <div class="column">
+                      <img src="assets/winter.jpg" style="margin-top: 35px;" width="200" />
+                    </div>
+                    <div class="column2">
+                      <h3>When Is Chanukah?</h3>
+                      <p>Chanukah begins on the eve of Kislev 25 and continues for eight days. On the civil calendar, it generally coincides with the month of December. Chanukah 2022 runs from Dec. 18-Dec. 26</p>
+                  </div>
+                </div>
+              
+              </li>
+              <li id="carousel__slide3"
+                  tabindex="0"
+                  class="carousel__slide">
+                <div class="carousel__snapper">
+                  <div class="row">
+                    <div class="column">
+                      <img src="assets/kotel.jpg" style="margin-top: 35px;" width="200" />
+                    </div>
+                    <div class="column2">
+                    <h3>How to Celebrate</h3>
+                    <p>At the heart of the festival is the nightly menorah lighting. The menorah holds nine flames, one of which is the shamash (“attendant”), which is used to kindle the other eight lights. On the first night, we light just one flame. On the second night, an additional flame is lit. By the eighth night of Chanukah, all eight lights are kindled.</p>
+                    <p>On Friday afternoon, care must be taken to light the menorah before Shabbat candles are lit, and the following evening they are to be kindled only after Shabbat has ended.</p>
+                  </div>
+                </div>
+              </li>
+              <li id="carousel__slide4"
+                  tabindex="0"
+                  class="carousel__slide">
+                <div class="carousel__snapper">
+                  <div class="row">
+                    <div class="column">
+                      <img src="assets/latke.jpg" style="margin-top: 35px;" width="200" />
+                    </div>
+                    <div class="column2">
+                      <h3>Chanukah Foods</h3>
+                      <p>Sincethe Chanukah miracle involved oil, it is customary to eat foods fried in oil. The Eastern-European classic is the potato latke (pancake) garnished with applesauce or sour cream, and the reigning Israeli favorite is the jelly-filled sufganya (doughnut).</p>
+                  </div>
+                </div>
+              </li>
+            
+          </section>
+          </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
